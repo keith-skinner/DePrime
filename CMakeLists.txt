@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.9)
+project(DePrime)
+add_executable(deprime main.c)
+find_package(OpenMP)
+target_link_libraries(deprime PUBLIC OpenMP::OpenMP_C)
